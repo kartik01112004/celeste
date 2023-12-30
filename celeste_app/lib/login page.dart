@@ -8,7 +8,7 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-        // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+        
         icon: const FaIcon(FontAwesomeIcons.hammer),
         color: Colors.grey[700],
         onPressed: () {});
