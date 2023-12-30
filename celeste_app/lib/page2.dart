@@ -15,15 +15,15 @@ class _playerState extends State<player> {
       Container(
         child:Column(mainAxisAlignment:MainAxisAlignment.spaceEvenly,
         children: 
-        [ Text("SINGLE PLAYER",style: TextStyle(fontSize: 20,color: const Color.fromARGB(255, 244, 247, 245),fontWeight: FontWeight.bold),),
-        Text("MULTIPLAYER",style: TextStyle(fontSize: 18,color: const Color.fromARGB(255, 244, 247, 245),fontWeight: FontWeight.bold),),
-        Text("MAPS",style: TextStyle(fontSize: 16,color: const Color.fromARGB(255, 244, 247, 245),fontWeight: FontWeight.bold),)])
+        [ Text("SINGLE PLAYER",style: TextStyle(fontSize: 25,color: const Color.fromARGB(255, 244, 247, 245),fontWeight: FontWeight.bold),),
+        Text("MULTIPLAYER",style: TextStyle(fontSize: 23,color: const Color.fromARGB(255, 244, 247, 245),fontWeight: FontWeight.bold),),
+        Text("MAPS",style: TextStyle(fontSize: 20 ,color: const Color.fromARGB(255, 244, 247, 245),fontWeight: FontWeight.bold),)])
       ),
       SizedBox( height:30),
       
-       Text("SETTINGS",style: TextStyle(fontSize: 12,color: const Color.fromARGB(255, 244, 247, 245)),),
-       Text("SHOP",style: TextStyle(fontSize: 12,color: const Color.fromARGB(255, 244, 247, 245)),),
-       Text("QUIZ",style: TextStyle(fontSize: 12,color: const Color.fromARGB(255, 244, 247, 245)),),
+       Text("SETTINGS",style: TextStyle(fontSize: 15,color: const Color.fromARGB(255, 244, 247, 245)),),
+       Text("SHOP",style: TextStyle(fontSize: 15,color: const Color.fromARGB(255, 244, 247, 245)),),
+       Text("QUIZ",style: TextStyle(fontSize: 15,color: const Color.fromARGB(255, 244, 247, 245)),),
       ])
     );
   }
