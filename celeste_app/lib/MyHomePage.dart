@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('celeste_app/assets/earth1.jpg'),
+                  image: AssetImage("celeste_app/assets/earth1.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
