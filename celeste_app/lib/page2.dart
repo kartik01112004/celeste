@@ -11,7 +11,7 @@ class _playerState extends State<player> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:Column(children:[ Image.asset('celeste_app/assets/IMG-20231230-WA0055.jpg',fit: BoxFit.cover,),
+      body:Column(children:[ Image.asset("celeste_app/assets/IMG-20231230-WA0055.jpg",fit: BoxFit.cover,),
       Container(
         child:Column(mainAxisAlignment:MainAxisAlignment.spaceEvenly,
         children: 
