@@ -50,7 +50,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               child: Text("PLAY NOW"),
             ),
-            IconButton(onPressed:(){Get.to(SIGNUPPAGE());},color: Colors.white, icon:Icon(Icons.person_add_outlined) )
+            IconButton(
+                onPressed: () {
+                  Get.to(SIGNUPPAGE());
+                },
+                color: Colors.white,
+                icon: Icon(Icons.person_add_outlined))
           ],
         ),
       ),
