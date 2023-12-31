@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("celeste_app/assets/earth1.jpg"),
+                  image: AssetImage("assets/earth1.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -50,7 +50,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               child: Text("PLAY NOW"),
             ),
-            IconButton(onPressed:(){Get.to(SIGNUPPAGE());},color: Colors.white, icon:Icon(Icons.person_add_outlined) )
+            IconButton(
+                onPressed: () {
+                  Get.to(SIGNUPPAGE());
+                },
+                color: Colors.white,
+                icon: Icon(Icons.person_add_outlined))
           ],
         ),
       ),
