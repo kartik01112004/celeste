@@ -27,7 +27,7 @@ class _SignupPageState extends State<SignupPage> {
       body: Stack(
         children: [
           Image.asset(
-            'assets/image6.gif',
+            'assets/image5.gif',
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
