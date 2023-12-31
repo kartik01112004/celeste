@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:spacegame1/page2.dart'; 
+import 'package:spacegame1/page2.dart';
 import 'auth_service.dart';
 
 class MyWidget extends StatelessWidget {
@@ -70,8 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     validator: (value) {
                       if (value!.isEmpty ||
-                          !RegExp(
-                                  r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                          !RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                               .hasMatch(value)) {
                         return 'Enter a valid email!';
                       }
@@ -138,11 +137,12 @@ class _LoginPageState extends State<LoginPage> {
                         if (_formKey.currentState!.validate()) {
                           _formKey.currentState!.save();
                           login
-                              ? AuthServices.signinUser(email, password, context)
+                              ? AuthServices.signinUser(
+                                  email, password, context)
                               : AuthServices.signupUser(
                                   email, password, fullName, context);
-                         
-                          Get.to(() => Player()); 
+
+                          Get.to(() => Player());
                         }
                       },
                       child: Text(login ? 'Login' : 'Signup'),
@@ -169,6 +169,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-
-
