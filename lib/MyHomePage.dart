@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Get.to(const player());
+                    Get.to(const Player());
                   },
                   style: ElevatedButton.styleFrom(
                     primary: const Color.fromARGB(97, 168, 164, 164),
