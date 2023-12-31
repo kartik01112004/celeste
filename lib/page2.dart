@@ -10,9 +10,8 @@ class player extends StatefulWidget {
 class _playerState extends State<player> {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Scaffold(
-          body: Column(children: [
+    return Scaffold(
+      body: Column(children: [
         Image.asset(
           "assets/IMG-20231230-WA0055.jpg",
           fit: BoxFit.contain,
@@ -20,14 +19,14 @@ class _playerState extends State<player> {
         Container(
             height: 500,
             width: 500,
-            child: Column(
+            child: const Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
                     "SINGLE PLAYER",
                     style: TextStyle(
                         fontSize: 25,
-                        color: const Color.fromARGB(255, 244, 247, 245),
+                        color: Color.fromARGB(255, 244, 247, 245),
                         fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   ),
@@ -35,7 +34,7 @@ class _playerState extends State<player> {
                     "MULTIPLAYER",
                     style: TextStyle(
                         fontSize: 23,
-                        color: const Color.fromARGB(255, 244, 247, 245),
+                        color: Color.fromARGB(255, 244, 247, 245),
                         fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   ),
@@ -43,31 +42,31 @@ class _playerState extends State<player> {
                     "MAPS",
                     style: TextStyle(
                         fontSize: 20,
-                        color: const Color.fromARGB(255, 244, 247, 245),
+                        color: Color.fromARGB(255, 244, 247, 245),
                         fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   )
                 ])),
-        SizedBox(height: 30),
-        Text(
+        const SizedBox(height: 30),
+        const Text(
           "SETTINGS",
           style: TextStyle(
-              fontSize: 15, color: const Color.fromARGB(255, 244, 247, 245)),
+              fontSize: 15, color: Color.fromARGB(255, 244, 247, 245)),
           textAlign: TextAlign.left,
         ),
-        Text(
+        const Text(
           "SHOP",
           style: TextStyle(
-              fontSize: 15, color: const Color.fromARGB(255, 244, 247, 245)),
+              fontSize: 15, color: Color.fromARGB(255, 244, 247, 245)),
           textAlign: TextAlign.left,
         ),
-        Text(
+        const Text(
           "QUIZ",
           style: TextStyle(
-              fontSize: 15, color: const Color.fromARGB(255, 244, 247, 245)),
+              fontSize: 15, color: Color.fromARGB(255, 244, 247, 245)),
           textAlign: TextAlign.left,
         ),
-      ])),
+      ]),
     );
   }
 }

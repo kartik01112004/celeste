@@ -42,22 +42,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Get.to(player());
+                    Get.to(const player());
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(97, 168, 164, 164),
+                    primary: const Color.fromARGB(97, 168, 164, 164),
                   ),
-                  child: Text(
+                  child: const Text(
                     "PLAY NOW",
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
                 IconButton(
                   onPressed: () {
-                    Get.to(SIGNUPPAGE());
+                    Get.to(const SIGNUPPAGE());
                   },
                   color: Colors.white,
-                  icon: Icon(Icons.person_add_outlined),
+                  icon: const Icon(Icons.person_add_outlined),
                 ),
               ],
             ),
