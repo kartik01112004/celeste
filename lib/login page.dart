@@ -35,6 +35,8 @@ class _LoginPageState extends State<LoginPage> {
   String fullName = '';
   bool login = false;
 
+  final TextStyle whiteTextStyle = TextStyle(color: Colors.white);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +69,10 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(10.0),
                         borderSide: const BorderSide(),
                       ),
+                      labelStyle: whiteTextStyle,
+                      hintStyle: whiteTextStyle,
                     ),
+                    style: whiteTextStyle,
                     validator: (value) {
                       if (value!.isEmpty ||
                           !RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
@@ -95,7 +100,10 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(10.0),
                         borderSide: const BorderSide(),
                       ),
+                      labelStyle: whiteTextStyle,
+                      hintStyle: whiteTextStyle,
                     ),
+                    style: whiteTextStyle,
                     onSaved: (value) {
                       setState(() {
                         password = value!;
@@ -114,7 +122,10 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(10.0),
                         borderSide: const BorderSide(),
                       ),
+                      labelStyle: whiteTextStyle,
+                      hintStyle: whiteTextStyle,
                     ),
+                    style: whiteTextStyle,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Please enter user name';
