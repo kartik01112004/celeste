@@ -4,8 +4,6 @@ import 'package:get/get.dart';
 import 'package:spacegame1/page2.dart';
 import 'auth_service.dart';
 
-
-
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -46,14 +44,13 @@ class _LoginPageState extends State<LoginPage> {
             key: _formKey,
             child: ListView(
               children: [
-                
                 ListTile(
                   title: TextFormField(
                     keyboardType: TextInputType.emailAddress,
                     controller: _emailAddress,
                     decoration: InputDecoration(
                       hintText: "Enter email address",
-                      icon: const Icon(Icons.mail_outlined),
+                      icon: const Icon(FontAwesomeIcons.envelope),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
                         borderSide: const BorderSide(),
