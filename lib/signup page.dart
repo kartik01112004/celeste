@@ -42,7 +42,7 @@ class _SignupPageState extends State<SignupPage> {
                   controller: emailaddress,
                   decoration: InputDecoration(
                     hintText: "Enter email address",
-                    icon: const Icon(FontAwesomeIcons.a),
+                    icon: const Icon(FontAwesomeIcons.envelope),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(),
