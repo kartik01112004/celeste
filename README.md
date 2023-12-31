@@ -29,9 +29,17 @@ https://science.nasa.gov/missions/hubble/hubble-discovers-moon-orbiting-the-dwar
 
 https://www.nasa.gov/centers-and-facilities/jpl/young-giant-planet-offers-clues-to-formation-of-exotic-worlds/
 
+##Additional information about the project.
+1. Explored advanced Flutter features.
+2. Implemented custom UI components.
+3. Integrated external libraries for enhanced functionality.
+4. Resolved minor bugs and improved overall project stability.
+5. Updated project dependencies for better compatibility.
+
 The project is a combined efforts of all the enthusiastic geeks of the team CELESTIALS 
 1. Saurav Kumar (Team Lead)
 2. Kartik Goel
 3. Vanshika Sharma
 4. Akshat Malik
 5. Aryan Jha
+6. Ritika
