@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:spacegame1/page2.dart';
+import 'package:spacegame1/login%20page.dart';
+
 import 'package:spacegame1/signup%20page.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -42,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Get.to(Player());
+                    Get.to(LoginPage());
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Color.fromARGB(97, 168, 164, 164),
@@ -54,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 IconButton(
                   onPressed: () {
-                    Get.to(SIGNUPPAGE());
+                    Get.to(SignupPage());
                   },
                   color: Colors.white,
                   icon: Icon(Icons.person_add_outlined),

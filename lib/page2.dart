@@ -28,60 +28,90 @@ class _PlayerState extends State<Player> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text(
-                        "SINGLE PLAYER",
-                        style: TextStyle(
-                          fontSize: 25,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                      TextButton(
+                        onPressed: () {
+                          
+                        },
+                        child: Text(
+                          "SINGLE PLAYER",
+                          style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.left,
                         ),
-                        textAlign: TextAlign.left,
                       ),
-                      Text(
-                        "MULTIPLAYER",
-                        style: TextStyle(
-                          fontSize: 23,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                      TextButton(
+                        onPressed: () {
+                          
+                        },
+                        child: Text(
+                          "MULTIPLAYER",
+                          style: TextStyle(
+                            fontSize: 23,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.left,
                         ),
-                        textAlign: TextAlign.left,
                       ),
-                      Text(
-                        "MAPS",
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                      TextButton(
+                        onPressed: () {
+                          
+                        },
+                        child: Text(
+                          "MAPS",
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.left,
                         ),
-                        textAlign: TextAlign.left,
                       ),
                     ],
                   ),
                 ),
                 SizedBox(height: 30),
-                Text(
-                  "SETTINGS",
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.white,
+                TextButton(
+                  onPressed: () {
+                    
+                  },
+                  child: Text(
+                    "SETTINGS",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.left,
                   ),
-                  textAlign: TextAlign.left,
                 ),
-                Text(
-                  "SHOP",
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.white,
+                TextButton(
+                  onPressed: () {
+                    
+                  },
+                  child: Text(
+                    "SHOP",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.left,
                   ),
-                  textAlign: TextAlign.left,
                 ),
-                Text(
-                  "QUIZ",
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.white,
+                TextButton(
+                  onPressed: () {
+                   
+                  },
+                  child: Text(
+                    "QUIZ",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.left,
                   ),
-                  textAlign: TextAlign.left,
                 ),
               ],
             ),
