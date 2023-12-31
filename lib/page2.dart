@@ -32,7 +32,7 @@ class _PlayerState extends State<Player> {
                         onPressed: () {
                           // Add code for SINGLE PLAYER onPressed
                         },
-                        child: Text(
+                        child: const Text(
                           "SINGLE PLAYER",
                           style: TextStyle(
                             fontSize: 25,
@@ -46,7 +46,7 @@ class _PlayerState extends State<Player> {
                         onPressed: () {
                          
                         },
-                        child: Text(
+                        child: const Text(
                           "MULTIPLAYER",
                           style: TextStyle(
                             fontSize: 23,
@@ -60,7 +60,7 @@ class _PlayerState extends State<Player> {
                         onPressed: () {
                           
                         },
-                        child: Text(
+                        child: const Text(
                           "MAPS",
                           style: TextStyle(
                             fontSize: 20,
@@ -78,7 +78,7 @@ class _PlayerState extends State<Player> {
                   onPressed: () {
                     
                   },
-                  child: Text(
+                  child: const Text(
                     "SETTINGS",
                     style: TextStyle(
                       fontSize: 15,
@@ -91,7 +91,7 @@ class _PlayerState extends State<Player> {
                   onPressed: () {
                     
                   },
-                  child: Text(
+                  child: const Text(
                     "SHOP",
                     style: TextStyle(
                       fontSize: 15,
@@ -104,7 +104,7 @@ class _PlayerState extends State<Player> {
                   onPressed: () {
                     
                   },
-                  child: Text(
+                  child: const Text(
                     "QUIZ",
                     style: TextStyle(
                       fontSize: 15,
