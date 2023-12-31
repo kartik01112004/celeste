@@ -32,6 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontSize: 30,
                   ),
                 ),
+                const SizedBox(height: 16),
                 const Text(
                   "DIVE INTO AN IMMERSIVE TRAVELLING EXPERIENCE",
                   style: TextStyle(
@@ -41,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Get.to(LOGINPAGE());
+                    Get.to(player());
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Color.fromARGB(97, 168, 164, 164),
@@ -60,32 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            const SizedBox(height: 16),
-            const Text(
-              "DIVE INTO AN IMMERSIVE TRAVELLING EXPERIENCE",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-              ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Get.to(player());
-              },
-              style: ElevatedButton.styleFrom(
-                primary: Color.fromARGB(97, 168, 164, 164),
-              ),
-              child: Text("PLAY NOW"),
-            ),
-            IconButton(
-                onPressed: () {
-                  Get.to(SIGNUPPAGE());
-                },
-                color: Colors.white,
-                icon: Icon(Icons.person_add_outlined))
-          ],
-        ),
-          ),
+          )
         ],
       ),
     );
