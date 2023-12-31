@@ -45,11 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-//<<<<<<< HEAD
                     Get.to(LoginPage());
-//=======
+
                     Get.to(const Player());
-//>>>>>>> 9b1b79ca7b0b75fa2cc1835c60493e74bc54d776
                   },
                   style: ElevatedButton.styleFrom(
                     primary: const Color.fromARGB(97, 168, 164, 164),
@@ -61,11 +59,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 IconButton(
                   onPressed: () {
-//<<<<<<< HEAD
                     Get.to(SignupPage());
-//=======
+
                     Get.to(const SignupPage());
-//>>>>>>> 9b1b79ca7b0b75fa2cc1835c60493e74bc54d776
                   },
                   color: Colors.black,
                   icon: const Icon(Icons.person_add_outlined),
