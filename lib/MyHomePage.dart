@@ -4,6 +4,8 @@ import 'package:spacegame1/login%20page.dart';
 
 import 'package:spacegame1/signup%20page.dart';
 
+import 'page2.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
@@ -29,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 const Text(
                   "WINTER HACKS",
                   style: TextStyle(
-                    color: Color.fromARGB(255, 241, 239, 239),
+                    color: Color.fromARGB(255, 66, 63, 63),
                     fontSize: 30,
                   ),
                 ),
@@ -37,28 +39,36 @@ class _MyHomePageState extends State<MyHomePage> {
                 const Text(
                   "DIVE INTO AN IMMERSIVE TRAVELLING EXPERIENCE",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 18,
                   ),
                 ),
                 ElevatedButton(
                   onPressed: () {
+//<<<<<<< HEAD
                     Get.to(LoginPage());
+//=======
+                    Get.to(const Player());
+//>>>>>>> 9b1b79ca7b0b75fa2cc1835c60493e74bc54d776
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(97, 168, 164, 164),
+                    primary: const Color.fromARGB(97, 168, 164, 164),
                   ),
-                  child: Text(
+                  child: const Text(
                     "PLAY NOW",
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
                 IconButton(
                   onPressed: () {
+//<<<<<<< HEAD
                     Get.to(SignupPage());
+//=======
+                    Get.to(const SignupPage());
+//>>>>>>> 9b1b79ca7b0b75fa2cc1835c60493e74bc54d776
                   },
-                  color: Colors.white,
-                  icon: Icon(Icons.person_add_outlined),
+                  color: Colors.black,
+                  icon: const Icon(Icons.person_add_outlined),
                 ),
               ],
             ),

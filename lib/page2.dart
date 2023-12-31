@@ -30,7 +30,7 @@ class _PlayerState extends State<Player> {
                     children: [
                       TextButton(
                         onPressed: () {
-                          
+                          // Add code for SINGLE PLAYER onPressed
                         },
                         child: Text(
                           "SINGLE PLAYER",
@@ -44,7 +44,7 @@ class _PlayerState extends State<Player> {
                       ),
                       TextButton(
                         onPressed: () {
-                          
+                          // Add code for MULTIPLAYER onPressed
                         },
                         child: Text(
                           "MULTIPLAYER",
@@ -58,7 +58,7 @@ class _PlayerState extends State<Player> {
                       ),
                       TextButton(
                         onPressed: () {
-                          
+                          // Add code for MAPS onPressed
                         },
                         child: Text(
                           "MAPS",
@@ -73,10 +73,10 @@ class _PlayerState extends State<Player> {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 TextButton(
                   onPressed: () {
-                    
+                    // Add code for SETTINGS onPressed
                   },
                   child: Text(
                     "SETTINGS",
@@ -89,7 +89,7 @@ class _PlayerState extends State<Player> {
                 ),
                 TextButton(
                   onPressed: () {
-                    
+                    // Add code for SHOP onPressed
                   },
                   child: Text(
                     "SHOP",
@@ -102,7 +102,7 @@ class _PlayerState extends State<Player> {
                 ),
                 TextButton(
                   onPressed: () {
-                   
+                    // Add code for QUIZ onPressed
                   },
                   child: Text(
                     "QUIZ",
