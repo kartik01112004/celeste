@@ -15,7 +15,7 @@ class _SignupPageState extends State<SignupPage> {
   final TextEditingController emailaddress = TextEditingController();
   final TextEditingController phonenumber = TextEditingController();
   final TextEditingController password = TextEditingController();
-
+ final TextStyle whiteTextStyle = TextStyle(color: Colors.white);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,18 +36,20 @@ class _SignupPageState extends State<SignupPage> {
             key: _formKey,
             child: ListView(
               children: [
-                MyWidget(),
+                SizedBox(height: 10,),
                 TextFormField(
                   keyboardType: TextInputType.emailAddress,
                   controller: emailaddress,
                   decoration: InputDecoration(
                     hintText: "Enter email address",
-                    icon: const Icon(Icons.mail_outlined),
+                    icon: const Icon(FontAwesomeIcons.a),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(),
                     ),
-                  ),
+                     labelStyle: whiteTextStyle,
+                      hintStyle: whiteTextStyle,
+                  ),style: whiteTextStyle,
                   onFieldSubmitted: (value) {
                     // Validator
                   },
@@ -66,12 +68,14 @@ class _SignupPageState extends State<SignupPage> {
                   controller: phonenumber,
                   decoration: InputDecoration(
                     hintText: "Enter phone number",
-                    icon: const Icon(Icons.account_circle_outlined),
+                    icon: const Icon(FontAwesomeIcons.phone),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(),
                     ),
-                  ),
+                    labelStyle: whiteTextStyle,
+                      hintStyle: whiteTextStyle,
+                  ),style: whiteTextStyle,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Please enter phone number';
@@ -89,7 +93,9 @@ class _SignupPageState extends State<SignupPage> {
                       borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(),
                     ),
-                  ),
+                    labelStyle: whiteTextStyle,
+                      hintStyle: whiteTextStyle,
+                  ),style: whiteTextStyle,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Please enter user password';

@@ -4,18 +4,7 @@ import 'package:get/get.dart';
 import 'package:spacegame1/page2.dart';
 import 'auth_service.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return IconButton(
-      icon: const FaIcon(FontAwesomeIcons.hammer),
-      color: Colors.grey[700],
-      onPressed: () {},
-    );
-  }
-}
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -57,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
             key: _formKey,
             child: ListView(
               children: [
-                const MyWidget(),
+                
                 ListTile(
                   title: TextFormField(
                     keyboardType: TextInputType.emailAddress,

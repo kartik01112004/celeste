@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:spacegame1/login%20page.dart';
-
 import 'package:spacegame1/signup%20page.dart';
-
 import 'page2.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -32,7 +30,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   "WINTER HACKS",
                   style: TextStyle(
                     color: Color.fromARGB(255, 66, 63, 63),
-                    fontSize: 30,
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -40,13 +39,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   "DIVE INTO AN IMMERSIVE TRAVELLING EXPERIENCE",
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 18,
+                    fontSize: 20,
                   ),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     Get.to(LoginPage());
-
                     Get.to(const Player());
                   },
                   style: ElevatedButton.styleFrom(
@@ -57,14 +55,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
-                IconButton(
+                TextButton(
                   onPressed: () {
                     Get.to(SignupPage());
-
                     Get.to(const SignupPage());
                   },
-                  color: Colors.black,
-                  icon: const Icon(Icons.person_add_outlined),
+                  style: TextButton.styleFrom(
+                    primary: Colors.black,
+                  ),
+                  child: const Text("SIGNUP"),
                 ),
               ],
             ),
