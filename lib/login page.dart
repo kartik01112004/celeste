@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                     controller: _emailAddress,
                     decoration: InputDecoration(
                       hintText: "Enter email address",
-                      icon: const Icon(Icons.mail_outlined),
+                      icon: const Icon(FontAwesomeIcons.envelope),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
                         borderSide: const BorderSide(),
