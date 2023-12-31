@@ -32,7 +32,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontSize: 30,
                   ),
                 ),
-                const SizedBox(height: 16),
                 const Text(
                   "DIVE INTO AN IMMERSIVE TRAVELLING EXPERIENCE",
                   style: TextStyle(
