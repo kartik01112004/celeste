@@ -25,7 +25,7 @@ class _PlayerState extends State<Player> {
                 Container(
                   height: 500,
                   width: 500,
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Text(
@@ -58,8 +58,8 @@ class _PlayerState extends State<Player> {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
-                Text(
+                const SizedBox(height: 30),
+                const Text(
                   "SETTINGS",
                   style: TextStyle(
                     fontSize: 15,
@@ -67,7 +67,7 @@ class _PlayerState extends State<Player> {
                   ),
                   textAlign: TextAlign.left,
                 ),
-                Text(
+                const Text(
                   "SHOP",
                   style: TextStyle(
                     fontSize: 15,
@@ -75,7 +75,7 @@ class _PlayerState extends State<Player> {
                   ),
                   textAlign: TextAlign.left,
                 ),
-                Text(
+                const Text(
                   "QUIZ",
                   style: TextStyle(
                     fontSize: 15,

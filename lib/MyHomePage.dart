@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 const Text(
                   "WINTER HACKS",
                   style: TextStyle(
-                    color: Color.fromARGB(255, 241, 239, 239),
+                    color: Color.fromARGB(255, 66, 63, 63),
                     fontSize: 30,
                   ),
                 ),
@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 const Text(
                   "DIVE INTO AN IMMERSIVE TRAVELLING EXPERIENCE",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 18,
                   ),
                 ),
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: () {
                     Get.to(const SIGNUPPAGE());
                   },
-                  color: Colors.white,
+                  color: Colors.black,
                   icon: const Icon(Icons.person_add_outlined),
                 ),
               ],
