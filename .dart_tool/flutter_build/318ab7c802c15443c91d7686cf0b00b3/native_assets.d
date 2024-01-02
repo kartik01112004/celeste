@@ -1,0 +1,1 @@
+ C:\\Users\\USER\\OneDrive\\Desktop\\celeste\\.dart_tool\\flutter_build\\318ab7c802c15443c91d7686cf0b00b3\\native_assets.yaml: 

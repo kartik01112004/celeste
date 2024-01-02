@@ -1,0 +1,1 @@
+ D:\\flutter\ projects\\celeste\\.dart_tool\\flutter_build\\7e7e1248f25f3fb7a9f988de87267712\\native_assets.yaml: 
