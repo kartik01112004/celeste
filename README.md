@@ -7,9 +7,10 @@ This app uses the following tech stacks :
 
 1. Flutter
 2. Firebase
-3. Blender
-4. Unity 3D
-5. Adobe
+3. Adobe
+4. Blender
+5. unity
+
 
 To get an accurate view of the cosmos and the heavenly bodies of the universe we have used the resources available on the offical websites of various space organizations. 
 \\\\
