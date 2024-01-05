@@ -43,4 +43,4 @@ The project is a combined efforts of all the enthusiastic geeks of the team CELE
 3. Vanshika Sharma
 4. Akshat Malik
 5. Aryan Jha
-6. @bansalritika 
+6. Ritika Bansal
