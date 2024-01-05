@@ -5,7 +5,7 @@ import 'package:spacegame1/page2.dart';
 import 'auth_service.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
   String fullName = '';
   bool login = false;
 
-  final TextStyle whiteTextStyle = TextStyle(color: Colors.white);
+  final TextStyle whiteTextStyle = const TextStyle(color: Colors.white);
 
   @override
   Widget build(BuildContext context) {
@@ -126,7 +126,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 ListTile(
-                  title: Container(
+                  title: SizedBox(
                     height: 55,
                     width: double.infinity,
                     child: ElevatedButton(
@@ -139,7 +139,7 @@ class _LoginPageState extends State<LoginPage> {
                               : AuthServices.signupUser(
                                   email, password, fullName, context);
 
-                          Get.to(() => Player());
+                          Get.to(() => const Player());
                         }
                       },
                       child: Text(login ? 'Login' : 'Signup'),

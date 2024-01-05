@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:spacegame1/login%20page.dart';
-import 'package:spacegame1/signup%20page.dart';
 import 'page2.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -29,10 +28,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 const Text(
                   "WINTER HACKS",
                   style: TextStyle(
-                    color: Color.fromARGB(255, 66, 63, 63),
-                    fontSize: 50,
-                    fontWeight: FontWeight.bold
-                  ),
+                      color: Color.fromARGB(255, 66, 63, 63),
+                      fontSize: 50,
+                      fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 16),
                 const Text(
@@ -44,11 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Get.to(LoginPage());
+                    Get.to(const LoginPage());
                     Get.to(const Player());
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: const Color.fromARGB(97, 168, 164, 164),
+                    backgroundColor: const Color.fromARGB(97, 168, 164, 164),
                   ),
                   child: const Text(
                     "PLAY NOW",
@@ -57,13 +55,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 TextButton(
                   onPressed: () {
-                    Get.to(SignupPage());
-                    Get.to(const SignupPage());
+                    Get.to(const LoginPage());
+                    Get.to(const LoginPage());
                   },
                   style: TextButton.styleFrom(
-                    primary: Colors.black,
+                    foregroundColor: Colors.black,
                   ),
-                  child: const Text("SIGNUP"),
+                  child: const Text("SignUp/Login"),
                 ),
               ],
             ),

@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NEXTPAGE extends StatefulWidget {
   final String value;
-  NEXTPAGE({ required this.value});
+  const NEXTPAGE({super.key,  required this.value});
   @override
   State<NEXTPAGE> createState() => _NEXTPAGEState();
 }
@@ -23,7 +23,7 @@ class _NEXTPAGEState extends State<NEXTPAGE> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
-            child: Text("${widget.value}",style: TextStyle(
+            child: Text(widget.value,style: const TextStyle(
               fontSize: 34.0,color: Colors.white
             ),),
           ),

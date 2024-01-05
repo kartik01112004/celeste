@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:spacegame1/UnityScreen.dart';
 
 class Player extends StatefulWidget {
-  const Player({Key? key}) : super(key: key);
+  const Player({super.key});
 
   @override
   _PlayerState createState() => _PlayerState();
@@ -22,7 +24,7 @@ class _PlayerState extends State<Player> {
           SingleChildScrollView(
             child: Column(
               children: [
-                Container(
+                SizedBox(
                   height: 500,
                   width: 500,
                   child: Column(
@@ -30,7 +32,7 @@ class _PlayerState extends State<Player> {
                     children: [
                       TextButton(
                         onPressed: () {
-                          // Add code for SINGLE PLAYER onPressed
+                          Get.to(const UnityScreen());
                         },
                         child: const Text(
                           "SINGLE PLAYER",
@@ -43,9 +45,7 @@ class _PlayerState extends State<Player> {
                         ),
                       ),
                       TextButton(
-                        onPressed: () {
-                         
-                        },
+                        onPressed: () {},
                         child: const Text(
                           "MULTIPLAYER",
                           style: TextStyle(
@@ -57,9 +57,7 @@ class _PlayerState extends State<Player> {
                         ),
                       ),
                       TextButton(
-                        onPressed: () {
-                          
-                        },
+                        onPressed: () {},
                         child: const Text(
                           "MAPS",
                           style: TextStyle(
@@ -75,9 +73,7 @@ class _PlayerState extends State<Player> {
                 ),
                 const SizedBox(height: 30),
                 TextButton(
-                  onPressed: () {
-                    
-                  },
+                  onPressed: () {},
                   child: const Text(
                     "SETTINGS",
                     style: TextStyle(
@@ -88,9 +84,7 @@ class _PlayerState extends State<Player> {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {
-                    
-                  },
+                  onPressed: () {},
                   child: const Text(
                     "SHOP",
                     style: TextStyle(
@@ -101,9 +95,7 @@ class _PlayerState extends State<Player> {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {
-                    
-                  },
+                  onPressed: () {},
                   child: const Text(
                     "QUIZ",
                     style: TextStyle(

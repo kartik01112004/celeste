@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'login page.dart';
 
 class SignupPage extends StatefulWidget {
-  const SignupPage({Key? key}) : super(key: key);
+  const SignupPage({super.key});
 
   @override
   State<SignupPage> createState() => _SignupPageState();
@@ -15,7 +15,7 @@ class _SignupPageState extends State<SignupPage> {
   final TextEditingController emailaddress = TextEditingController();
   final TextEditingController phonenumber = TextEditingController();
   final TextEditingController password = TextEditingController();
- final TextStyle whiteTextStyle = TextStyle(color: Colors.white);
+ final TextStyle whiteTextStyle = const TextStyle(color: Colors.white);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +36,7 @@ class _SignupPageState extends State<SignupPage> {
             key: _formKey,
             child: ListView(
               children: [
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 TextFormField(
                   keyboardType: TextInputType.emailAddress,
                   controller: emailaddress,
@@ -108,7 +108,7 @@ class _SignupPageState extends State<SignupPage> {
                     if (_formKey.currentState!.validate()) {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => LoginPage()),
+                        MaterialPageRoute(builder: (context) => const LoginPage()),
                       );
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(

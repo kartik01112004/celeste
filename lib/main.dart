@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-      options: FirebaseOptions(
+      options: const FirebaseOptions(
           apiKey: "AIzaSyAb7QlySSxbCVGYiCSYVLUP01ssl1rEbRY",
           appId: "1:408956506917:web:a3cb13a98f8a20bb0580cc",
           messagingSenderId: "408956506917",
@@ -16,12 +16,12 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      home: const MyHomePage(),
+    return const GetMaterialApp(
+      home: MyHomePage(),
     );
   } //.
 }
